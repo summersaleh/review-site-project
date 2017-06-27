@@ -24,7 +24,7 @@ public class Review {
 	public String getContent() {
 		return content;
 	}
-	
+
 	public String getSingleImage() {
 		return singleImage;
 	}
@@ -33,21 +33,13 @@ public class Review {
 		return description;
 	}
 
-	public Review(long id, String title, String imageURL, String content) {
+	public Review(long id, String title, String imageURL, String content, String singleImage, String description) {
 		this.id = id;
 		this.title = title;
 		this.imageURL = imageURL;
 		this.content = content;
-	}
-	
-	public Review(long id, String title, String imageURL, String content, String singleImage, String description) {
-		this(id, title, imageURL, content);
 		this.singleImage = singleImage;
 		this.description = description;
-		
 	}
-
-	
-
 
 }

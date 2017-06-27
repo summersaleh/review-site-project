@@ -15,7 +15,6 @@ public class ReviewController {
 	@Resource
 	ReviewRepo repo;
 
-
 	@RequestMapping("/reviews")
 	public String fetchTravelReviews(Model model) {
 		model.addAttribute("travelAsCollection", repo.findAll());
