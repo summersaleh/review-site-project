@@ -6,6 +6,8 @@ public class Review {
 	private String title;
 	private String imageURL;
 	private String content;
+	private String singleImage;
+	private String description;
 
 	public long getId() {
 		return id;
@@ -22,6 +24,14 @@ public class Review {
 	public String getContent() {
 		return content;
 	}
+	
+	public String getSingleImage() {
+		return singleImage;
+	}
+
+	public String getDescription() {
+		return description;
+	}
 
 	public Review(long id, String title, String imageURL, String content) {
 		this.id = id;
@@ -29,6 +39,15 @@ public class Review {
 		this.imageURL = imageURL;
 		this.content = content;
 	}
+	
+	public Review(long id, String title, String imageURL, String content, String singleImage, String description) {
+		this(id, title, imageURL, content);
+		this.singleImage = singleImage;
+		this.description = description;
+		
+	}
+
+	
 
 
 }

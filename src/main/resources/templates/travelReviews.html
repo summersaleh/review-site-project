@@ -12,7 +12,7 @@
 
 	
 	<div th:each="Reviews: ${travelAsCollection}">
-		<h1><a th:href="${Reviews.id}" th:text="${Reviews.title}"></a></h1>
+		<h1><a th:href="@{/singleReview(id=${Reviews.getId()})}" th:text="${Reviews.getTitle()}"></a></h1>
 		<p th:text="${Reviews.content}"> </p>
 		<img th:src="${Reviews.imageURL}"/>
 	</div>

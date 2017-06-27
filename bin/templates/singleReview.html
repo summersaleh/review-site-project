@@ -2,14 +2,14 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<link rel="stylesheet" type="text/css" href="singleStyles.css"></link>
-	<title>Iceland</title>
+	<title></title>
 </head>
 <body>
 	<header>
-		<h1>Iceland</h1>
+		<h1> th:text= "${Review.getTitle()}"</h1>
 	</header>
 
-	<img class="Iceland" src="/images/Iceland.jpg"/>
+	<img th:src="Iceland.jpg"/>
 	
 	<div>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
