@@ -39,11 +39,13 @@ public class ReviewController {
 		model.addAttribute("travelAsCollection", repo.findAll());
 		return "travelReviews";
 	}
-//
-//	@RequestMapping("/1234")
-//	public String iceland(@RequestParam("id") Long id, Model model) {
+
+	@RequestMapping("/singleReview")
+	public String fetchSingleReview(@RequestParam("id") Long id, Model model) {
+		Review countries = repo.findOne(id);
+		model.addAttribute(countries);
 //		model.addAttribute("travelAsCollection", repo.findOne(1234L));
-//		return "iceland";
-//	}
+		return "singelReview";
+	}
 
 }
